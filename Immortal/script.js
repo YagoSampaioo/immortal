@@ -55,6 +55,9 @@ document.addEventListener('click', function(event) {
     }
 });
 
-document.addEventListener('click', function() {
-  document.getElementById('backgroundMusic').play();
-}, { once: true });
+document.getElementById('playButton').addEventListener('click', function() {
+    const audio = document.getElementById('backgroundMusic');
+    audio.play().catch(error => {
+        console.error("Erro ao tentar reproduzir o áudio:", error);
+    });
+});
