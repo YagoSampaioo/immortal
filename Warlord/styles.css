@@ -122,20 +122,6 @@ body, html {
     animation: fadeIn 0.5s ease-out;
 }
 
-.loading {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    z-index: 1000;
-    font-size: 1.2em;
-    font-family: 'Dear Mr Pazuzu', cursive;
-    text-align: center;
-}
-
 @font-face {
     font-family: 'Dear Mr Pazuzu';
     src: url('fonts/DearMrPazuzu.woff2') format('woff2'),

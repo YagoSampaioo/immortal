@@ -1,15 +1,10 @@
 function togglePergaminho() {
     const pergaminho = document.getElementById('pergaminho');
     const pergaminhoFechado = document.querySelector('.pergaminho-fechado');
-    const loading = document.getElementById('loading');
     
     if (pergaminho.style.display === 'none') {
-        loading.style.display = 'block';
-        setTimeout(() => {
-            pergaminho.style.display = 'block';
-            pergaminhoFechado.style.display = 'none';
-            loading.style.display = 'none';
-        }, 1000); // Simula um carregamento de 1 segundo
+        pergaminho.style.display = 'block';
+        pergaminhoFechado.style.display = 'none';
     } else {
         pergaminho.style.display = 'none';
         pergaminhoFechado.style.display = 'block';
