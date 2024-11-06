@@ -54,3 +54,7 @@ document.addEventListener('click', function(event) {
         pergaminhoFechado.style.display = 'block'; // Mostra o pergaminho fechado novamente
     }
 });
+
+document.addEventListener('click', function() {
+  document.getElementById('backgroundMusic').play();
+}, { once: true });
