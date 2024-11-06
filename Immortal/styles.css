@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    background-image: url('/Immortal/img/Celular.png');
+    background-image: url('./img/Celular.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body, html {
     color: #fff;
     width: 80%;
     max-width: 600px;
-    background-image: url('/Immortal/img/Pergaminho.png');
+    background-image: url('./img/Pergaminho.png');
     background-size: contain;
     background-repeat: no-repeat;
     padding: 20px;
