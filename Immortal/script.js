@@ -1,14 +1,18 @@
-// Função para alternar a visibilidade do pergaminho
 function togglePergaminho() {
     const pergaminho = document.getElementById('pergaminho');
     const pergaminhoFechado = document.querySelector('.pergaminho-fechado');
+    const loading = document.getElementById('loading');
     
     if (pergaminho.style.display === 'none') {
-        pergaminho.style.display = 'block';
-        pergaminhoFechado.style.display = 'none'; // Esconde o pergaminho fechado
+        loading.style.display = 'block';
+        setTimeout(() => {
+            pergaminho.style.display = 'block';
+            pergaminhoFechado.style.display = 'none';
+            loading.style.display = 'none';
+        }, 1000); // Simula um carregamento de 1 segundo
     } else {
         pergaminho.style.display = 'none';
-        pergaminhoFechado.style.display = 'block'; // Mostra o pergaminho fechado
+        pergaminhoFechado.style.display = 'block';
     }
 }
 
@@ -16,9 +20,14 @@ function togglePergaminho() {
 document.getElementById('amulet').addEventListener('click', function() {
     const pergaminho = document.getElementById('pergaminho');
     const pergaminhoFechado = document.querySelector('.pergaminho-fechado');
+    const loading = document.getElementById('loading');
     
-    pergaminho.style.display = 'block';
-    pergaminhoFechado.style.display = 'none'; // Esconde o pergaminho fechado
+    loading.style.display = 'block';
+    setTimeout(() => {
+        pergaminho.style.display = 'block';
+        pergaminhoFechado.style.display = 'none';
+        loading.style.display = 'none';
+    }, 1000); // Simula um carregamento de 1 segundo
 });
 
 // Eventos de hover no amuleto
